@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Geist:wght@400;600;800&display=swap');
+
+@theme {
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-primary: #c0c1ff;
+  --color-primary-container: #8083ff;
+  --color-on-primary: #1000a9;
+  
+  --color-secondary: #4cd7f6;
+  --color-secondary-container: #03b5d3;
+  --color-on-secondary: #003640;
+
+  --color-tertiary: #d0bcff;
+  --color-tertiary-container: #a078ff;
+  --color-on-tertiary: #3c0091;
+
+  --color-surface: #0c1324;
+  --color-surface-variant: #2e3447;
+  --color-on-surface: #dce1fb;
+  --color-on-surface-variant: #c7c4d7;
+  
+  --color-background: #0c1324;
+  --color-outline: #908fa0;
+  
+  --color-surface-container-lowest: #070d1f;
+  --color-surface-container-low: #151b2d;
+  --color-surface-container: #191f31;
+  --color-surface-container-high: #23293c;
+  --color-surface-container-highest: #2e3447;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface/70 backdrop-blur-xl border border-white/10 transition-all duration-300;
+  }
+  
+  .glass-card:hover {
+    @apply border-white/20 shadow-2xl;
+  }
+
+  .aurora-blur {
+    @apply blur-[120px] opacity-20 pointer-events-none;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  transition: background-color 0.3s ease;
+}
