@@ -50,9 +50,9 @@ function MainApp() {
       <main className="flex-grow">
         <PageTransition>
           <Routes>
-            <Route path="/" element={<BlogPage />} />
-            <Route path="/portfolio" element={<PortfolioPage />} />
-          </Routes>
+          <Route path="/" element={<PortfolioPage />} /> 
+          <Route path="/blog" element={<BlogPage />} />
+        </Routes>
         </PageTransition>
       </main>
 
