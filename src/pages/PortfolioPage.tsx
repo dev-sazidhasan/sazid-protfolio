@@ -196,7 +196,7 @@ export default function PortfolioPage() {
             title="GoogleChat.io"
             desc="A full-stack chat application designed for fast, secure, and reliable communication with real-time updates, user authentication, and an intuitive user experience."
             tags={['react.js', 'socket.io', 'firebase']}
-            image="/src/pages/assets/GoogleChat.png"
+            image="/src/pages/assets/googlechat.png"
           />
           <ProjectCard 
             title="MoneyTracker"
