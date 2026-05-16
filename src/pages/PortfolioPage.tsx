@@ -170,7 +170,7 @@ export default function PortfolioPage() {
               </div>
               <div>
                 <h3 className="font-bold">Latest Certifications</h3>
-                <p className="text-on-surface-variant text-sm">AWS Certified Solutions Architect</p>
+                <p className="text-on-surface-variant text-sm">Web Design And Development For Freelancing Level-3 (NSDA)</p>
               </div>
             </div>
           </div>
@@ -187,16 +187,28 @@ export default function PortfolioPage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ProjectCard 
-            title="Nova Analytics Suite"
-            desc="Real-time data processing platform with 3D visualization engine for enterprise-level logistics."
-            tags={['Next.js', 'Three.js']}
-            image="https://lh3.googleusercontent.com/aida-public/AB6AXuCFVgkUDFS0sfMqY2EyrdnrfmJ90FY45l6dn67LKxweWlIZ1-VGgSIFs65bzMm-JM08X-bLKRD3DCbZ4tR6bHXIS0kR-4Yn2vJy1_ZtpR-BWdsW4PRZ5WmKSStWU2-PDxRIAPHEuAPycEfbsCutHQ9E5LApjYMYDJI4UmvczYSDAyt7BbZTnXOvHesWcOlE_cZq8tjyqf9whf1iJgnMsm0Dazq0kWh7nDFa1azp02Retq1E_OrlOO9z8kuerl6iXQkYv0xjVZS-1O4"
+            title="SaaS MERN Platform"
+            desc="A full-stack SaaS MERN platform designed to deliver scalable, secure, and high-performance web applications with modern authentication, real-time data handling, and a responsive user interface."
+            tags={['Next.js', 'Node.js', 'WebGL']}
+            image="/src/pages/assets/Saas.png"
           />
           <ProjectCard 
-            title="SyncCode Pro"
-            desc="A collaborative pair-programming environment with zero-latency synchronization and integrated video."
-            tags={['PostgreSQL', 'WebRTC']}
-            image="https://lh3.googleusercontent.com/aida-public/AB6AXuC4aiHm-R8Upm0_8RyktG6lS2rTDu1Vul6IHEC8m9UbFTmIU_4VyTimWqTnzk5-LC8TbZmxaVtvVyFcJXLjNbosql56xY-qY1fpJuO0sNUeai4VT0AU-YPxrai-qGxDtAqtwyllqgSHRd--ll0G2iYKO_iw4-I_ZIt-KgdnMDJ5J-ciIjm7EwfHSCRp0lRq3Y4oPtPS2jlYV86B4McapyBcAW2iJULPDKC56GUUGr54slRhulTCsmByW_-Tx0Xji2Lee1hgFWw6Cds"
+            title="GoogleChat.io"
+            desc="A full-stack chat application designed for fast, secure, and reliable communication with real-time updates, user authentication, and an intuitive user experience."
+            tags={['react.js', 'socket.io', 'firebase']}
+            image="/src/pages/assets/GoogleChat.png"
+          />
+          <ProjectCard 
+            title="MoneyTracker"
+            desc="Smart money tracking and expense management system."
+            tags={['react.js','node.js','mongodb']}
+            image="/src/pages/assets/money.png"
+          />
+          <ProjectCard 
+            title="Notepad"
+            desc="A simple and modern note-taking application that allows users to create, edit, and manage notes efficiently with a clean and distraction-free interface."
+            tags={['react.js','node.js','mongodb']}
+            image="/src/pages/assets/notepad.png"
           />
         </div>
       </section>
@@ -288,8 +300,8 @@ function ProjectCard({ title, desc, tags, image }: { title: string; desc: string
       <div className="relative aspect-video rounded-3xl overflow-hidden mb-6 border border-white/10">
         <img className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src={image} alt={title} />
         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-          <button className="bg-primary text-on-primary p-3 rounded-full hover:scale-110 transition-transform"><ArrowUpRight /></button>
-          <button className="glass-card p-3 rounded-full hover:scale-110 transition-transform"><Code /></button>
+          <button className="cursor-pointer bg-primary text-on-primary p-3 rounded-full hover:scale-110 transition-transform"><ArrowUpRight /></button>
+          <button className="cursor-pointer glass-card p-3 rounded-full hover:scale-110 transition-transform"><Code /></button>
         </div>
       </div>
       <div className="space-y-3">
